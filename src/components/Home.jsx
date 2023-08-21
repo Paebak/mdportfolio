@@ -15,7 +15,7 @@ export const Home = () => {
 
         <p className='text-orange-300 pl-4'>Hi, my name is</p>
         <h1 className='text-5xl sm:text 5xl font-bold text-[#ccd6f6] pl-4'>
-          Matthew Downs <span className='text-orange-400 opacity-70'>&amp;</span></h1>
+          Matthew Downs <span className='text-orange-300'>&amp;</span></h1>
         <h2 className='text-5xl sm: text-4xl font-bold text-[#8892b0] pl-4'>
           I'm a Full Stack Developer.</h2>
         <p className='text-[#8892b0] font-semibold py-4 max-w-[700px] pl-4'>
