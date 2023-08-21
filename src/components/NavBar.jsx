@@ -21,7 +21,7 @@ const NavBar = () => {
      
       <ul className='hidden md:flex'> 
         <li className='hover:text-orange-300 duration-300'> 
-        
+        <input type="button" onClick="document.getElementById('middle').scrollIntoView();" />
         <Link to="home" smooth={true}  duration={500} >
           Home
         </Link> </li>
@@ -31,7 +31,7 @@ const NavBar = () => {
           About
         </Link></li>
         <li className='hover:text-orange-300 duration-300' >
-          
+
         <Link to="skills" smooth={true}  duration={500} >
           Skills
         </Link></li>
@@ -84,25 +84,25 @@ const NavBar = () => {
       <ul>
         <li className='w-[160px] h-[60px] flex justify-between items center ml-[-100px] hover:ml-[-10px] duration-300'>
           <a className='flex rounded-md justify-between items-center w-full text-gray-200 bg-blue-600 pl-4 pr-2'
-          href="/">
+          href="https://www.linkedin.com/in/matthew-downs2/" target='_blank'>
             Linkedin <FaLinkedin size={(30)} />
           </a>
         </li>
         <li className='w-[160px] h-[60px] flex justify-between items center ml-[-100px] hover:ml-[-10px] duration-300'>
           <a className='flex rounded-md justify-between items-center w-full text-gray-200 bg-gray-900 pl-4 pr-2'
-          href="/">
+          href="https://github.com/Paebak" target='_blank'>
             Github <FaGithub size={(30)} />
           </a>
         </li>
         <li className='w-[160px] h-[60px] flex justify-between items center ml-[-100px] hover:ml-[-10px] duration-300'>
           <a className='flex rounded-md justify-between items-center w-full text-gray-200 bg-green-500 pl-4 pr-2'
-          href="/">
+          href="mailto:matthewdowns225@gmail.com" target='_blank'>
             Email <HiOutlineMail size={(30)} />
           </a>
         </li>
         <li className='w-[160px] h-[60px] flex justify-between items center ml-[-100px] hover:ml-[-10px] duration-300'>
           <a className='flex rounded-md justify-between items-center w-full text-gray-200 bg-red-500 pl-4 pr-2'
-          href="/">
+          href="/" target='_blank'>
             Resume <BsFillPersonLinesFill size={(30)} />
           </a>
         </li>

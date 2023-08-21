@@ -20,7 +20,7 @@ const Skills = () => {
           <p className='text-4xl font-semibold inline border-b-4 border-orange-300 '>
             Experience
             </p>
-          <p className='py-4 font-bold text-md'>
+          <p className='py-4 font-semibold text-md'>
             // These are the technologies I've worked with</p>
         </div>
 
