@@ -6,49 +6,37 @@ import Untitled from '../assets/Untitled.png'
 import * as Scroll from 'react-scroll';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
+const MainMenuLink = (props) => (
+  <li className='hover:text-red-300 duration-300'>
+    <input type="button" onClick="document.getElementById('middle').scrollIntoView();"/>
+    <Link to={props.link.toLowerCase()} smooth={true} duration={500}>
+      {props.link}
+    </Link>
+  </li>
+  );
 
 const NavBar = () => {
-    const [nav, setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
+  const [nav, setNav] = useState(false)
+  const handleClick = () => setNav(!nav)
+  const links = ['Home','About','Skills','Work','Contact'];
+
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0A192F] text-gray-300'>
+    <div className='fixed w-full h-[80px] flex justify-betwe en items-center px-4 bg-[#0A192F] text-gray-300'>
      <div>
         <img src={Untitled} alt="Logo" style={{width: '75px'}} />
      </div>
 
      {/* Menu Menu */}
      
-      <ul className='hidden md:flex'> 
-        <li className='hover:text-orange-300 duration-300'> 
-        <input type="button" onClick="document.getElementById('middle').scrollIntoView();" />
-        <Link to="home" smooth={true}  duration={500} >
-          Home
-        </Link> </li>
-        <li className='hover:text-orange-300 duration-300' >
-        
-          <Link to="about" smooth={true}  duration={500} >
-          About
-        </Link></li>
-        <li className='hover:text-orange-300 duration-300' >
-
-        <Link to="skills" smooth={true}  duration={500} >
-          Skills
-        </Link></li>
-        <li className='hover:text-orange-300 duration-300' >
-          
-          <Link to="work" smooth={true}  duration={500} >
-          Work
-        </Link></li>
-        <li className='hover:text-orange-300 duration-300' >
-        
-          
-        
-          <Link to="contact" smooth={true}  duration={500} >
-          Contact
-        </Link></li>
+      <ul className='hidden md:flex'>
+        {
+          links.map(l => (
+            <MainMenuLink link={l}/>
+          ))
+        }
       </ul>
-     
+
 
      {/* Hamburger */}
      <div onClick={handleClick} className='md:hidden z-10 hover:text-orange-300 duration-300'>
