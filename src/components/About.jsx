@@ -14,14 +14,11 @@ const About = () => {
           </div>
         <div className='max-w-[1000px] w-full px-4 grid sm:grid-cols-2 sm:divide-x-0 gap-8 pl-10'>
             <div className='sm:text-right text-4xl font-semibold '>
-          <p>Hi I'm <span className='text-orange-300'>Matthew!</span> Nice to meet you! Please take a look around!</p>
+          <p>Hi I'm <span className='text-orange-300'>Matthew!</span> I'm a Cybersecurity Engineer working with Threat Detection and Log Management to help protect one of the biggest names in wireless! </p>
             </div>
             
             <div>
-              <p className='font-light tracking-tight'>Currently in school for my associates degree in information security, 
-                I have found a passion in web development and in building responsive
-                and modern web applications. With a keen focus on beautiful design, smart security
-                standards, and a willingness to learn and try new things, I make a great addition to any team!
+              <p className='font-light tracking-tight'>  
               </p>
             </div>
         </div>
