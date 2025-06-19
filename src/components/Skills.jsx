@@ -1,69 +1,56 @@
-import React from 'react'
+import React from 'react';
 
-import HTML from '../assets/html.png'
-import CSS from '../assets/css.png'
-import Javascript from '../assets/javascript.png'
-import ReactImg from '../assets/react.png'
-import Node from '../assets/node.png'
-import AWS from '../assets/aws.png'
-import GitHub from '../assets/github.png'
-import Tailwind from '../assets/tailwind.png'
-
+import AWS from '../assets/aws.png';
+import Azure from '../assets/azure.png'; // Add logo manually to /assets
+import Splunk from '../assets/splunk.png'; // Add manually
+import XSOAR from '../assets/xsoar.png'; // Add manually
+import ReactImg from '../assets/react.png';
+import Tailwind from '../assets/tailwind.png';
+import Kali from '../assets/kali.png'; // Add manually
+import ETL from '../assets/etl.png'; // Add manually
 
 const Skills = () => {
   return (
-    <div name='skills' className='px-10 bg-[#0A192F] text-gray-300'>
-      {/*Container*/}
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full'>
+    <div name="skills" className="px-10 bg-[#0A192F] text-gray-300">
+      {/* Container */}
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full">
         <div>
-         
-          <p className='text-4xl font-semibold inline border-b-4 border-orange-300 '>
+          <p className="text-4xl font-semibold inline border-b-4 border-orange-300">
             Experience
-            </p>
-          <p className='py-4 font-semibold text-md'>
-            // These are the technologies I've worked with</p>
+          </p>
+          <p className="py-4 font-semibold text-md">// Technologies & platforms I’ve worked with</p>
         </div>
 
-        <div className='w-full grid grid-cols-2 sm:grid-cols-3 text-center py-8'>
-          <div className=' shadow-[#040c16] hover:scale-110 duration-500 p-2'>
-            <img className='w-20 mx-auto' src={HTML} alt="HTML Icon" />
-            <p>HTML</p>
-          
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 text-center py-8 gap-4">
+          {/* AWS */}
+          <div className="shadow-[#040c16] hover:scale-110 duration-500 p-4">
+            <img className="w-20 mx-auto" src={AWS} alt="AWS Icon" />
+            <p>AWS</p>
           </div>
-          <div className=' shadow-[#040c16] hover:scale-110 duration-500 p-2'>
-            <img className='w-20 mx-auto' src={CSS} alt="HTML Icon" />
-            <p>CSS</p>
-          
-          </div>
-          <div className=' shadow-[#040c16] hover:scale-110 duration-500 p-2'>
-            <img className='w-20 mx-auto' src={Javascript} alt="HTML Icon" />
-            <p>JavaScript</p>
-          
-          </div>
-          <div className=' shadow-[#040c16] hover:scale-110 duration-500 p-2'>
-            <img className='w-20 mx-auto' src={GitHub} alt="HTML Icon" />
-            <p>GitHub</p>
-          
-          </div>
-          <div className=' shadow-[#040c16] hover:scale-110 duration-500 p-2'>
-            <img className='w-20 mx-auto' src={Tailwind} alt="HTML Icon" />
-            <p>TailwindCSS</p>
-          
-          </div>
-          <div className=' shadow-[#040c16] hover:scale-110 duration-500 p-2'>
-            <img className='w-20 mx-auto' src={AWS} alt="HTML Icon" />
-            <p className >AWS</p>
-          
-          </div>
-         
-        
-        </div>
-      </div>
-    </div>
-        
-    
-  
-  );
-};
 
-export default Skills
+          {/* Azure Sentinel */}
+          <div className="shadow-[#040c16] hover:scale-110 duration-500 p-4">
+            <img className="w-20 mx-auto" src={Azure} alt="Azure Sentinel Icon" />
+            <p>Azure Sentinel</p>
+          </div>
+
+          {/* Splunk */}
+          <div className="shadow-[#040c16] hover:scale-110 duration-500 p-4">
+            <img className="w-20 mx-auto" src={Splunk} alt="Splunk Icon" />
+            <p>Splunk</p>
+          </div>
+
+          {/* Cortex XSOAR */}
+          <div className="shadow-[#040c16] hover:scale-110 duration-500 p-4">
+            <img className="w-20 mx-auto" src={XSOAR} alt="Cortex XSOAR Icon" />
+            <p>Cortex XSOAR</p>
+          </div>
+
+          {/* React */}
+          <div className="shadow-[#040c16] hover:scale-110 duration-500 p-4">
+            <img className="w-20 mx-auto" src={ReactImg} alt="React Icon" />
+            <p>React</p>
+          </div>
+
+          {/* Tailwind */}
+          <div className="shadow-[#040c16] hover:scale-110 duration-500 p-4">
